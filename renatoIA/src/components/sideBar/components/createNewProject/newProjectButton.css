@@ -1,0 +1,22 @@
+.newProject {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+.newProject p {
+    overflow: hidden;
+    text-align: start;
+    white-space: nowrap;
+    font-size: 16px;
+    transition: .4s;
+}
+
+.newProject .closed {
+    width: 0px;
+}
+
+.newProject .expanded {
+    width: 140px;
+    padding-left: 12px;
+}

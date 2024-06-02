@@ -1,0 +1,12 @@
+.sideBar {
+    padding: 20px;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--boxColor);
+}
+
+.sideBar img {
+    width: 30px;
+}

@@ -1,0 +1,15 @@
+.logo > a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo > a img {
+    width: 48px;
+}
+
+.logo h1 {
+    font-size: 24px;
+    font-weight: 500;
+}
