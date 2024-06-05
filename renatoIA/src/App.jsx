@@ -7,10 +7,10 @@ function App() {
   return (
     <main>
       <SideBar/>
-      <content>
+      <div>
         <Header/>
 
-      </content>
+      </div>
     </main>
   )
 }

@@ -4,5 +4,6 @@ main {
     display: flex;
 }
 
-content {
+div {
+    width: -webkit-fill-available;
 }
