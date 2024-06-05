@@ -1,0 +1,23 @@
+.business-plan-area {
+    display: flex;
+    padding: 12px;
+}
+
+.business-plan-area > button {
+    padding: 20px;
+}
+
+.business-plan-area .business-plan {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    transition: .4s;
+}
+
+.business-plan-area .business-plan p {
+    background-color: var(--boxColor);
+    flex-grow: 1;
+    border-radius: 24px;
+    padding: 10px;
+}
