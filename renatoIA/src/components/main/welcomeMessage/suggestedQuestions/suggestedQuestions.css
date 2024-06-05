@@ -1,0 +1,6 @@
+.suggestedQuestions {
+    display: flex;
+    gap: 12px;
+    height: 228px;
+    padding: 8px;
+}
