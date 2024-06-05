@@ -4,6 +4,6 @@ main {
     display: flex;
 }
 
-div {
+.full-width {
     width: -webkit-fill-available;
 }
