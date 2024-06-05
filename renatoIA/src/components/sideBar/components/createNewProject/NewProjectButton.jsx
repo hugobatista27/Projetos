@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 export const NewProjectButton = ({isExpanded}) => {
     NewProjectButton.propTypes = {
-        isExpanded: PropTypes.string.isRequired
+        isExpanded: PropTypes.bool.isRequired
     }
 
     return (

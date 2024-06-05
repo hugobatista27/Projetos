@@ -12,6 +12,10 @@
     transition: .4s;
 }
 
+.newProject img {
+    width: 30px;
+}
+
 .newProject .closed {
     width: 0px;
 }
