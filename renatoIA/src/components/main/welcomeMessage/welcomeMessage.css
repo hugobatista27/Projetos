@@ -13,3 +13,12 @@
     font-weight: 500;
     color: #c4c7c5;
 }
+
+.message-area-welcome {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 66px;
+}

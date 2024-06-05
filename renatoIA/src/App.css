@@ -7,3 +7,8 @@ main {
 .full-width {
     width: -webkit-fill-available;
 }
+
+.content {
+    display: flex;
+    flex-grow: 1;
+}

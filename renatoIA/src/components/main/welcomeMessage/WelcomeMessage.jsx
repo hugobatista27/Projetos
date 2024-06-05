@@ -4,7 +4,7 @@ let name = "NOME_TESTE"
 
 export const WelcomeMessage = () => {
   return (
-    <div >
+    <div className="message-area-welcome">
         <div className="welcomeMessage">
             <h1>Olá, {name}</h1>
             <h2>Posso ajudar?</h2>

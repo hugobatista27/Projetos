@@ -10,11 +10,15 @@ export const ChatArea = () => {
     const [project, setProject] = useState();
 
     return (
-        <div className="chat-area" style={{width: '920px'}}>
-            {project ? <div>ChatArea</div> : <WelcomeMessage/>
-            }
-            <NewProjectButton isExpanded={true}/>
-            <SendMessage/>
+        <div style={{display:'flex', flexGrow: '1', justifyContent:'center'}}>
+            <div className="chat-area">
+                <div>
+                    {project ? <div>ChatArea</div> : <WelcomeMessage/>
+                    }
+                    <NewProjectButton isExpanded={true}/>
+                </div>
+                <SendMessage/>
+            </div>
         </div>
     )
 }

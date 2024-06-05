@@ -1,3 +1,12 @@
 .chat-area {
     width: 920px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.chat-area > div:first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }

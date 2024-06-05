@@ -2,17 +2,18 @@ import './App.css'
 import { Header } from './components/header/Header'
 import { SideBar } from './components/sideBar/SideBar'
 import { ChatArea } from './components/main/ChatArea';
+import { BusinessPlanArea } from './components/main/BusinessPlanArea';
 
 function App() {
 
   return (
     <main>
       <SideBar/>
-      <div className='full-width'>
+      <div className='full-width' style={{display: 'flex', flexDirection: 'column'}}>
         <Header/>
-        <div style={{display: 'flex'}}>
+        <div className='content'>
           <ChatArea/>
-          <div>plano de negocio</div>
+          <BusinessPlanArea/>
         </div>
       </div>
     </main>
