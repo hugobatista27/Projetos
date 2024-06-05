@@ -1,0 +1,19 @@
+.promptSuggestion {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: var(--boxColor);
+    justify-content: space-between;
+    border-radius: 12px;
+    padding: 12px;
+    align-items: end;
+}
+
+.promptSuggestion p {
+    flex-grow: 1;
+    align-self: flex-start;
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--secondaryFontColor);
+}
