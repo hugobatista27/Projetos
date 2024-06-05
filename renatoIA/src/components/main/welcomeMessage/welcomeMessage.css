@@ -1,0 +1,15 @@
+.welcomeMessage h1 {
+    width: fit-content;
+    font-size: 54px;
+    font-weight: 500;
+    background-image: linear-gradient(to right, #58a1fa 10%, #fbc159 61%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.welcomeMessage h2 {
+    font-size: 40px;
+    font-weight: 500;
+    color: #c4c7c5;
+}
