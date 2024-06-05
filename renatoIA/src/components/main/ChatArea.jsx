@@ -10,6 +10,7 @@ export const ChatArea = () => {
         <div style={{width: '920px'}}>
             {project ? <div>ChatArea</div> : <WelcomeMessage/>
             }
+            
         </div>
     )
 }
