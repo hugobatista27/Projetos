@@ -22,3 +22,7 @@
 .sendMessage input:focus {
     outline: none;
 }
+
+.sendMessage img {
+    width: 24px;
+}

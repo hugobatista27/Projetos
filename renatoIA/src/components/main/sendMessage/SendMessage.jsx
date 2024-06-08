@@ -6,7 +6,7 @@ export const SendMessage = () => {
     return (
         <div className='sendMessage'>
             <input type="text" name="" id="" placeholder='Digite sua mensagem ou pergunta.'/>
-            <img src="./asd" alt="microphone" />
+            <img src="../../../../public/chat/microphone.svg" alt="microphone" />
         </div>
     )
 }
