@@ -1,8 +1,10 @@
 import './sideBar.css'
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { NewProjectButton } from './components/createNewProject/NewProjectButton';
+import { ProjectContext } from '../../App';
 
 export const SideBar = () => {
+    const { projects, setSelectedProject } = useContext(ProjectContext)
     const [expandSideBar, setExpandSideBar] = useState(false);
 
     const handleSideBar = () => {
@@ -10,11 +12,18 @@ export const SideBar = () => {
         console.log(expandSideBar);
     }
 
+    const handleProject = (changeToProject) => {
+        setSelectedProject(projects[changeToProject])
+    }
+
     return (
         <aside className='sideBar'>
             <button onClick={handleSideBar}>
                 <img src="../../../public/sideBar/menu.png" alt="" />
             </button>
+            {projects.map((project, index) => {
+                return <button onClick={() => handleProject(index)} key={index}>{project.name}</button>
+            })}
             <NewProjectButton isExpanded={expandSideBar}/>
         </aside>
     )
