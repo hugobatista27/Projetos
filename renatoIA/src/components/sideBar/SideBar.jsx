@@ -3,7 +3,7 @@ import { useState } from "react";
 import { NewProjectButton } from './components/createNewProject/NewProjectButton';
 
 export const SideBar = () => {
-    const [expandSideBar, setExpandSideBar] = useState(true);
+    const [expandSideBar, setExpandSideBar] = useState(false);
 
     const handleSideBar = () => {
         setExpandSideBar(!expandSideBar)
