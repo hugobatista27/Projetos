@@ -11,4 +11,5 @@ main {
 .content {
     display: flex;
     flex-grow: 1;
+    padding: 12px 0;
 }
