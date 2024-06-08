@@ -13,4 +13,25 @@ const suggestions = [
     },
 ]
 
-export { suggestions }
+const projects = [
+    {
+        id: 1,
+        name: 'nome',
+        proposal: {
+            area: 'area',
+            service: 'servico',
+        },
+        chat: ['ola', 'ola', 'tudo bom', 'tudo']
+    },
+    {
+        id: 2,
+        name: 'projeto 2',
+        proposal: {
+            area: 'area',
+            service: 'servico',
+        },
+        chat: ['ola', 'ola', 'tudo bom', 'tudo']
+    }
+]
+
+export { suggestions, projects }
