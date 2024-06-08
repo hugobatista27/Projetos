@@ -7,6 +7,11 @@
     padding: 20px;
 }
 
+.business-plan-area > button img {
+    width: 40px;
+    transition: .4s;
+}
+
 .business-plan-area .business-plan {
     overflow: hidden;
     display: flex;
