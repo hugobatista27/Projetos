@@ -4,7 +4,7 @@ import { Header } from './components/header/Header'
 import { SideBar } from './components/sideBar/SideBar'
 import { ChatArea } from './components/main/ChatArea';
 import { BusinessPlanArea } from './components/main/BusinessPlanArea';
-import { createContext, useContext, useState } from 'react';
+import { createContext, useState } from 'react';
 
 const ProjectContext = createContext(null);
 
