@@ -1,6 +1,8 @@
 import { SuggestedQuestions } from "./suggestedQuestions/SuggestedQuestions"
 import './welcomeMessage.css'
+import { NewProjectButton } from "../../sideBar/components/createNewProject/NewProjectButton"
 let name = "NOME_TESTE"
+
 
 export const WelcomeMessage = () => {
   return (
@@ -10,6 +12,7 @@ export const WelcomeMessage = () => {
             <h2>Posso ajudar?</h2>
         </div>
         <SuggestedQuestions/>
+        <NewProjectButton isExpanded={true}/>
     </div>
   )
 }

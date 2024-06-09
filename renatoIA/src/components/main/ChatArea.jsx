@@ -1,8 +1,8 @@
 import './chatArea.css';
 import { useContext } from "react";
+import { Chat } from './chat/Chat';
 import { WelcomeMessage } from "./welcomeMessage/WelcomeMessage";
 import { SendMessage } from "./sendMessage/SendMessage";
-import { NewProjectButton } from "../sideBar/components/createNewProject/NewProjectButton";
 import { ProjectContext } from '../../App';
 
 export const ChatArea = () => {
@@ -12,9 +12,8 @@ export const ChatArea = () => {
         <div style={{display:'flex', flexGrow: '1', justifyContent:'center'}}>
             <div className="chat-area">
                 <div>
-                    {selectedProject ? <div>{selectedProject.name}</div> : <WelcomeMessage/>
+                    {selectedProject ? <Chat/> : <WelcomeMessage/>
                     }
-                    <NewProjectButton isExpanded={true}/>
                 </div>
                 <SendMessage/>
             </div>
