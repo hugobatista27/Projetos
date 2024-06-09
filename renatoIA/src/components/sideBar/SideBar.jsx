@@ -22,7 +22,9 @@ export const SideBar = () => {
                 <img src="../../../public/sideBar/menu.png" alt="" />
             </button>
             {projects.map((project, index) => {
-                return <button onClick={() => handleProject(index)} key={index}>{project.name}</button>
+                if (expandSideBar) {
+                    return <button className='select-project-button' onClick={() => handleProject(index)} key={index}>{project.name}</button>      
+                }
             })}
             <NewProjectButton isExpanded={expandSideBar}/>
         </aside>

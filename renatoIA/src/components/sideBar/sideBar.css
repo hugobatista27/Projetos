@@ -10,3 +10,19 @@
 .sideBar img {
     width: 30px;
 }
+
+.sideBar .select-project-button {
+    width: 182px;
+    overflow: hidden;
+    text-align: start;
+    white-space: nowrap;
+    font-size: 16px;
+    transition: .4s;
+    padding: 4px 8px;
+}
+
+.sideBar .select-project-button:hover {
+    background-color: #b9bbbe;
+    padding: 4px 8px;
+    border-radius: 8px;
+}
