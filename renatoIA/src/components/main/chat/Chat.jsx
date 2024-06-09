@@ -1,18 +1,30 @@
 import './chat.css'
-import { useContext } from 'react'
+import { useContext, useRef, useEffect } from 'react'
 import { ProjectContext } from '../../../App'
 import PropTypes from 'prop-types';
 
 export const Chat = () => {
-    const { selectedProject } = useContext(ProjectContext)
+    const { selectedProject, projects } = useContext(ProjectContext)
+    const messagesEndRef = useRef(null);
+
+    useEffect(() => {
+        messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+    }, [projects]);
+    
 
     return (
-        <div>
+        <div className='messagesArea'>
             {selectedProject.chat.map((msg, index) => {
                 return (
-                    <div key={index}>{index % 2 === 0 ? <Message isUserMessage={false} msg={msg}/> : <Message isUserMessage={true} msg={msg}/>}</div>
+                    <div key={index}>
+                        {index % 2 === 0 ? 
+                            <Message isUserMessage={false} msg={msg}/> : 
+                            <Message isUserMessage={true} msg={msg}/>
+                        }
+                    </div>
                 )
             })}
+            <div ref={messagesEndRef}/>
         </div>
     )
 }
