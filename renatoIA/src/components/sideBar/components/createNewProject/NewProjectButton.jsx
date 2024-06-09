@@ -8,11 +8,12 @@ export const NewProjectButton = ({isExpanded}) => {
         isExpanded: PropTypes.bool.isRequired
     }
 
-    const {projects, setProjects, setSelectedProject} = useContext(ProjectContext)
+    const {projects, setProjects} = useContext(ProjectContext)
 
     const createNewProject = () => {
+        console.log(projects);
         setProjects([...projects, {
-            id: projects[projects.length - 1].index,
+            id: projects.length + 1,
             name: 'new project',
             proposal: {
                 area: '',
@@ -20,10 +21,6 @@ export const NewProjectButton = ({isExpanded}) => {
             },
             chat: []
         }])
-
-        setSelectedProject(projects[projects.length - 1])
-
-        console.log(projects);
     }
 
     return (
