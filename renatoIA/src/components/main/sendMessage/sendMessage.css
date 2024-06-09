@@ -1,11 +1,12 @@
 .sendMessage {
-    height: 60px;
+    height: 50px;
     flex-grow: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 12px;
     padding: 0 30px;
+    margin-bottom: 12px;
     border-radius: 42px;
     background-color: var(--boxColor);   
 }
@@ -13,7 +14,7 @@
 .sendMessage input {
     flex-grow: 1;
     width: fit-content;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
     color: var(--secondaryFontColor);
     padding: 2px;
@@ -24,5 +25,5 @@
 }
 
 .sendMessage img {
-    width: 24px;
+    width: 20px;
 }
