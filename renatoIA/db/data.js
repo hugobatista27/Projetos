@@ -1,3 +1,5 @@
+import { conversa } from "./chat-cafeteria"
+
 const suggestions = [
     { 
         message: 'Quais os melhores livros sobre empreendedorismo?',
@@ -16,22 +18,16 @@ const suggestions = [
 const projects = [
     {
         id: 1,
-        name: 'nome',
+        name: 'Verde Café',
         proposal: {
             area: 'area',
             service: 'servico',
         },
-        chat: ['Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque voluptas asperiores deserunt atque nam, quae perspiciatis consectetur aperiam hic! Quos perferendis eaque fuga aliquid optio necessitatibus? Consequatur, saepe. In, deserunt? Et accusamus vitae rerum ipsa amet maiores, omnis eveniet aliquid saepe nobis libero nostrum ea quia voluptas. Voluptatem, incidunt? Optio quam a eius similique pariatur, non corporis? Rerum, quidem sequi! Recusandae rerum vel aliquam aliquid eos quam perferendis saepe explicabo harum tempore soluta libero corrupti porro repellendus voluptatum, iure quis pariatur atque illo molestias dolorem a earum? Facere, unde ab', 'ola', 'tudo bom', 'tudo']
-    },
-    {
-        id: 2,
-        name: 'projeto 2',
-        proposal: {
-            area: 'area',
-            service: 'servico',
-        },
-        chat: ['ola', 'ola', 'tudo bom', 'tudo']
+        chat: conversa
     }
 ]
 
 export { suggestions, projects }
+
+
+// adicionar a funcao de clicar na logo ir para a mensagem de boas vindas
