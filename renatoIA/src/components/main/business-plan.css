@@ -1,6 +1,7 @@
 .business-plan-area {
     display: flex;
     padding: 12px;
+    height: 82vh;
 }
 
 .business-plan-area > button {
@@ -20,9 +21,43 @@
     transition: .4s;
 }
 
-.business-plan-area .business-plan p {
+.business-plan-area .business-plan {
+    width: 600px;
+    overflow: auto;
     background-color: var(--boxColor);
     flex-grow: 1;
     border-radius: 24px;
-    padding: 10px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.business-plan-area .business-plan > div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.business-plan-area .business-plan > h1 {
+    font-size: 24px;
+}
+
+.business-plan-area .business-plan > div > h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.business-plan-area .business-plan > div > p {
+    line-height: 1.4;
+}
+
+.business-plan-area .business-plan > div li {
+    margin-left: 24px;
+}
+
+.business-plan-area .business-plan-closed {
+    width: 0;
+    padding: 0;
 }
