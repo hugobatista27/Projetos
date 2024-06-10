@@ -37,7 +37,7 @@ const Message = ({isUserMessage, msg}) => {
 
     return (
         <div className='messages'>
-            <img src={isUserMessage ? '../../../../public/header/usericon.svg' : '../../../../public/header/iconlogo.svg'} alt="img" />
+            <img src={isUserMessage ? '/header/usericon.svg' : '/header/iconlogo.svg'} alt="img" />
             <p>{msg}</p>
         </div>
     )
