@@ -19,7 +19,7 @@ export const NewProjectButton = ({isExpanded}) => {
                 area: '',
                 service: '',
             },
-            chat: []
+            chat: ['Olá, meu nome é Renato e sou uma inteligência artificial que auxilia na criação de planos de negócios. Antes de comerçarmos preciso de algumas informações, qual é a proposta da empresa?']
         }])
     }
 
