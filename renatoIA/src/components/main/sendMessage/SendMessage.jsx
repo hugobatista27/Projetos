@@ -19,7 +19,7 @@ export const SendMessage = () => {
     return (
         <div className='sendMessage'>
             <input onKeyDown={newMessage} type="text" name="" id="" placeholder='Digite sua mensagem ou pergunta.'/>
-            <img src="../../../../public/chat/microphone.svg" alt="microphone" />
+            <img src="/chat/microphone.svg" alt="microphone" />
         </div>
     )
 }

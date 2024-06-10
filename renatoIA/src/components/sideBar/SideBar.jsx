@@ -19,7 +19,7 @@ export const SideBar = () => {
     return (
         <aside className='sideBar'>
             <button onClick={handleSideBar}>
-                <img src="../../../public/sideBar/menu.png" alt="" />
+                <img src="/sideBar/menu.png" alt="" />
             </button>
             {projects.map((project, index) => {
                 if (expandSideBar) {

@@ -7,7 +7,7 @@ export const User = () => {
             Fazer upgrade para o premium
         </button>
         <a href="#">
-            <img src="../../../../../public/header/usericon.svg" alt="user" />
+            <img src="/header/usericon.svg" alt="user" />
         </a>
     </div>
   )

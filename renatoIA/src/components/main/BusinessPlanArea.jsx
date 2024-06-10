@@ -19,7 +19,7 @@ export const BusinessPlanArea = () => {
     return (
         <div className="business-plan-area">
             <button onClick={toggleExhibition}>
-                <img src="../../../public/arrow.svg" alt="fechar/abrir" style={{rotate: showBusinessPlan ? '180deg' : '0deg'}}/>
+                <img src="/arrow.svg" alt="fechar/abrir" style={{rotate: showBusinessPlan ? '180deg' : '0deg'}}/>
             </button>
             {selectedProject && 
                 <div className={showBusinessPlan ? 'business-plan' : 'business-plan business-plan-closed'}>

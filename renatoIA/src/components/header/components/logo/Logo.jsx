@@ -13,7 +13,7 @@ export const Logo = () => {
     <div className="logo">
         {/* adicionar link para a pagina home */}
         <button onClick={handleProject}>
-            <img src="../../../../../public/header/iconlogo.svg" alt="logo" />
+            <img src="/header/iconlogo.svg" alt="logo" />
             <h1>RenatoIA</h1>
         </button>
     </div>
