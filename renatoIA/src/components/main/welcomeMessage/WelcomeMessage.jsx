@@ -1,7 +1,7 @@
 import { SuggestedQuestions } from "./suggestedQuestions/SuggestedQuestions"
 import './welcomeMessage.css'
 import { NewProjectButton } from "../../sideBar/components/createNewProject/NewProjectButton"
-let name = "NOME_TESTE"
+let name = "Maciel"
 
 
 export const WelcomeMessage = () => {
